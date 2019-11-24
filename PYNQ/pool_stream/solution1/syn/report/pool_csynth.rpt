@@ -1,0 +1,186 @@
+
+
+================================================================
+== Vivado HLS Report for 'pool'
+================================================================
+* Date:           Tue Aug 13 16:19:26 2019
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        pool_stream
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  50.00|     61.54|        6.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |  644|  644|  639|  639| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------+---------+-----+-----+-----+-----+---------+
+        |            |         |  Latency  |  Interval | Pipeline|
+        |  Instance  |  Module | min | max | min | max |   Type  |
+        +------------+---------+-----+-----+-----+-----+---------+
+        |pool_2D_U0  |pool_2D  |  638|  638|  638|  638|   none  |
+        |pool_1D_U0  |pool_1D  |  439|  439|  439|  439|   none  |
+        |hs2axis_U0  |hs2axis  |  203|  203|  203|  203|   none  |
+        +------------+---------+-----+-----+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|     46|
+|FIFO             |        8|      -|    145|    272|
+|Instance         |       24|     32|   9162|  17931|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     54|
+|Register         |        -|      -|      9|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |       32|     32|   9316|  18303|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |       26|     40|     26|    103|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------+---------------------+---------+-------+------+------+
+    |        Instance       |        Module       | BRAM_18K| DSP48E|  FF  |  LUT |
+    +-----------------------+---------------------+---------+-------+------+------+
+    |hs2axis_U0             |hs2axis              |        0|      6|   307|   318|
+    |pool_1D_U0             |pool_1D              |       16|     13|  4723|  8174|
+    |pool_2D_U0             |pool_2D              |        8|     13|  3830|  8951|
+    |pool_AXILiteS_s_axi_U  |pool_AXILiteS_s_axi  |        0|      0|   302|   488|
+    +-----------------------+---------------------+---------+-------+------+------+
+    |Total                  |                     |       24|     32|  9162| 17931|
+    +-----------------------+---------------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +------------------+---------+-----+-----+------+-----+---------+
+    |       Name       | BRAM_18K|  FF | LUT | Depth| Bits| Size:D*B|
+    +------------------+---------+-----+-----+------+-----+---------+
+    |stream_tp2_V_V_U  |        0|    5|  140|     2|  128|      256|
+    |stream_tp_V_V_U   |        8|  140|  132|     8|  128|     1024|
+    +------------------+---------+-----+-----+------+-----+---------+
+    |Total             |        8|  145|  272|    10|  256|     1280|
+    +------------------+---------+-----+-----+------+-----+---------+
+
+    * Expression: 
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |        Variable Name        | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |hs2axis_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |pool_1D_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |pool_2D_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |ap_idle                      |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_ready                |    and   |      0|  0|   2|           1|           1|
+    |hs2axis_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |pool_1D_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |pool_2D_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_hs2axis_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_pool_1D_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_pool_2D_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |Total                        |          |      0|  0|  46|          14|          11|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------+----+-----------+-----+-----------+
+    |               Name              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_hs2axis_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_pool_1D_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_pool_2D_U0_ap_ready  |   9|          2|    1|          2|
+    |hs2axis_U0_ap_ready_count        |   9|          2|    2|          4|
+    |pool_1D_U0_ap_ready_count        |   9|          2|    2|          4|
+    |pool_2D_U0_ap_ready_count        |   9|          2|    2|          4|
+    +---------------------------------+----+-----------+-----+-----------+
+    |Total                            |  54|         12|    9|         18|
+    +---------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------+---+----+-----+-----------+
+    |               Name              | FF| LUT| Bits| Const Bits|
+    +---------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_hs2axis_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_pool_1D_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_pool_2D_U0_ap_ready  |  1|   0|    1|          0|
+    |hs2axis_U0_ap_ready_count        |  2|   0|    2|          0|
+    |pool_1D_U0_ap_ready_count        |  2|   0|    2|          0|
+    |pool_2D_U0_ap_ready_count        |  2|   0|    2|          0|
+    +---------------------------------+---+----+-----+-----------+
+    |Total                            |  9|   0|    9|          0|
+    +---------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWADDR   |  in |    7|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARADDR   |  in |    7|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |   AXILiteS   |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |     pool     | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |     pool     | return value |
+|interrupt               | out |    1| ap_ctrl_hs |     pool     | return value |
+|in_V_V_TDATA            |  in |  128|    axis    |    in_V_V    |    pointer   |
+|in_V_V_TVALID           |  in |    1|    axis    |    in_V_V    |    pointer   |
+|in_V_V_TREADY           | out |    1|    axis    |    in_V_V    |    pointer   |
+|out_r_TDATA             | out |  128|    axis    | out_V_data_V |    pointer   |
+|out_r_TLAST             | out |    1|    axis    |  out_V_last  |    pointer   |
+|out_r_TVALID            | out |    1|    axis    |  out_V_last  |    pointer   |
+|out_r_TREADY            |  in |    1|    axis    |  out_V_last  |    pointer   |
++------------------------+-----+-----+------------+--------------+--------------+
+

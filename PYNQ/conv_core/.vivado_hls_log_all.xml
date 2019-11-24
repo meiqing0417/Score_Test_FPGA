@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between bus request on port 'gmem' (conv_core/conv_core.cpp:81) and bus request on port 'gmem' (conv_core/conv_core.cpp:80)." projectName="conv_core" solutionName="solution1" date="2019-08-13T16:03:52.247+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.1.1' (conv_core/conv_core.cpp:57:16) in function 'Conv' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop because there is nontrivial logic in the loop latch." projectName="conv_core" solutionName="solution1" date="2019-08-13T16:03:51.353+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] conv_core/conv_core.cpp:92: variable-indexed range selection may cause suboptimal QoR." projectName="conv_core" solutionName="solution1" date="2019-08-13T16:03:49.727+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

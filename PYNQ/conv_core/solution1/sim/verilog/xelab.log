@@ -1,0 +1,123 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "D:/Xilinx/Vivado/2018.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_Conv_top glbl -prj Conv.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver --initfile D:/Xilinx/Vivado/2018.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s Conv -debug wave 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/AESL_axi_master_gmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/AESL_axi_slave_AXILiteS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_AXILiteS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_Conv_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_AXILiteS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_AXILiteS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_gmem_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_gmem_m_axi
+INFO: [VRFC 10-311] analyzing module Conv_gmem_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module Conv_gmem_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module Conv_gmem_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module Conv_gmem_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module Conv_gmem_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module Conv_gmem_m_axi_read
+INFO: [VRFC 10-311] analyzing module Conv_gmem_m_axi_write
+INFO: [VRFC 10-2458] undeclared symbol data_valid, assumed default net type wire [C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_gmem_m_axi.v:2235]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mac_muladd_1ocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mac_muladd_1ocq_DSP48_12
+INFO: [VRFC 10-311] analyzing module Conv_mac_muladd_1ocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mac_muladd_2ncg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mac_muladd_2ncg_DSP48_11
+INFO: [VRFC 10-311] analyzing module Conv_mac_muladd_2ncg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mac_mul_sub_hbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mac_mul_sub_hbi_DSP48_5
+INFO: [VRFC 10-311] analyzing module Conv_mac_mul_sub_hbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_14nsg8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_14nsg8j_DSP48_4
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_14nsg8j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_16nseOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_16nseOg_DSP48_2
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_16nseOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_16nsfYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_16nsfYi_DSP48_3
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_16nsfYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_16s_ibs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_16s_ibs_DSP48_6
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_16s_ibs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_16s_kbM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_16s_kbM_DSP48_8
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_16s_kbM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_8ns_cud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_cud_DSP48_0
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_cud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_8ns_dEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_dEe_DSP48_1
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_dEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_8ns_jbC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_jbC_DSP48_7
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_jbC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_8ns_lbW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_lbW_DSP48_9
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_lbW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_mul_mul_8ns_mb6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_mb6_DSP48_10
+INFO: [VRFC 10-311] analyzing module Conv_mul_mul_8ns_mb6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Caiyujie/Desktop/gongkaike_hls/code/day6/conv_core/solution1/sim/verilog/Conv_sdiv_19s_9nsbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Conv_sdiv_19s_9nsbkb_div_u
+INFO: [VRFC 10-311] analyzing module Conv_sdiv_19s_9nsbkb_div
+INFO: [VRFC 10-311] analyzing module Conv_sdiv_19s_9nsbkb
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Conv_AXILiteS_s_axi
+Compiling module xil_defaultlib.Conv_gmem_m_axi_throttl(DATA_WID...
+Compiling module xil_defaultlib.Conv_gmem_m_axi_reg_slice(N=64)
+Compiling module xil_defaultlib.Conv_gmem_m_axi_fifo(DATA_BITS=6...
+Compiling module xil_defaultlib.Conv_gmem_m_axi_buffer(DATA_WIDT...
+Compiling module xil_defaultlib.Conv_gmem_m_axi_fifo(DEPTH=5,DEP...
+Compiling module xil_defaultlib.Conv_gmem_m_axi_fifo(DATA_BITS=2...
+Compiling module xil_defaultlib.Conv_gmem_m_axi_fifo(DATA_BITS=2...
+Compiling module xil_defaultlib.Conv_gmem_m_axi_write(NUM_WRITE_...
+Compiling module xil_defaultlib.Conv_gmem_m_axi_buffer(DATA_WIDT...
+Compiling module xil_defaultlib.Conv_gmem_m_axi_reg_slice(N=130)
+Compiling module xil_defaultlib.Conv_gmem_m_axi_read(NUM_READ_OU...
+Compiling module xil_defaultlib.Conv_gmem_m_axi(NUM_READ_OUTSTAN...
+Compiling module xil_defaultlib.Conv_sdiv_19s_9nsbkb_div_u(in0_W...
+Compiling module xil_defaultlib.Conv_sdiv_19s_9nsbkb_div(in0_WID...
+Compiling module xil_defaultlib.Conv_sdiv_19s_9nsbkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_cud_DSP48_0
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_cud(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_dEe_DSP48_1
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_dEe(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_16nseOg_DSP48_2
+Compiling module xil_defaultlib.Conv_mul_mul_16nseOg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_16nsfYi_DSP48_3
+Compiling module xil_defaultlib.Conv_mul_mul_16nsfYi(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_14nsg8j_DSP48_4
+Compiling module xil_defaultlib.Conv_mul_mul_14nsg8j(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mac_mul_sub_hbi_DSP48_5
+Compiling module xil_defaultlib.Conv_mac_mul_sub_hbi(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_16s_ibs_DSP48_6
+Compiling module xil_defaultlib.Conv_mul_mul_16s_ibs(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_jbC_DSP48_7
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_jbC(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_16s_kbM_DSP48_8
+Compiling module xil_defaultlib.Conv_mul_mul_16s_kbM(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_lbW_DSP48_9
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_lbW(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_mb6_DSP48_10
+Compiling module xil_defaultlib.Conv_mul_mul_8ns_mb6(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mac_muladd_2ncg_DSP48_11
+Compiling module xil_defaultlib.Conv_mac_muladd_2ncg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv_mac_muladd_1ocq_DSP48_12
+Compiling module xil_defaultlib.Conv_mac_muladd_1ocq(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Conv
+Compiling module xil_defaultlib.AESL_axi_master_gmem
+Compiling module xil_defaultlib.AESL_axi_slave_AXILiteS
+Compiling module xil_defaultlib.apatb_Conv_top
+Compiling module work.glbl
+Built simulation snapshot Conv

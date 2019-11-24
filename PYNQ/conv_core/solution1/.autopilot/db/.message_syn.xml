@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1312" content="Analyzing design file &apos;conv_core/conv_core.cpp&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 103.059 ; gain = 44.617" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 103.098 ; gain = 44.656" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1467" content="Starting code transformations ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 123.918 ; gain = 65.477" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1472" content="Checking synthesizability ..." tag=""/>
+	<Message prefix="[SYNCHK 200-23]" severity="WARNING" keynum="579" content="conv_core/conv_core.cpp:92: variable-indexed range selection may cause suboptimal QoR." tag=""/>
+	<Message prefix="[SYNCHK 200-10]" severity="INFO" keynum="597" content="0 error(s), 1 warning(s)." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 135.984 ; gain = 77.543" tag=""/>
+	<Message prefix="[XFORM 203-502]" severity="INFO" keynum="813" content="Unrolling all sub-loops inside loop &apos;Loop-1.1.1.1.1.1&apos; (conv_core/conv_core.cpp:70) in function &apos;Conv&apos; for pipelining." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="INFO" keynum="891" content="Unrolling loop &apos;Loop-1.1.1.1.1.1.1&apos; (conv_core/conv_core.cpp:90) in function &apos;Conv&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="INFO" keynum="891" content="Unrolling loop &apos;Loop-1.1.1.1.1.1.2&apos; (conv_core/conv_core.cpp:94) in function &apos;Conv&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-401]" severity="INFO" keynum="809" content="Performing if-conversion on hyperblock from (conv_core/conv_core.cpp:107:18) to (conv_core/conv_core.cpp:57:21) in function &apos;Conv&apos;... converting 3 basic blocks." tag=""/>
+	<Message prefix="[XFORM 203-401]" severity="INFO" keynum="809" content="Performing if-conversion on hyperblock to (conv_core/conv_core.cpp:51:16) in function &apos;Conv&apos;... converting 3 basic blocks." tag=""/>
+	<Message prefix="[XFORM 203-11]" severity="INFO" keynum="754" content="Balancing expressions in function &apos;Conv&apos; (conv_core/conv_core.cpp:9)...11 expression(s) balanced." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 169.906 ; gain = 111.465" tag=""/>
+	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1.1.1.1.1&apos; (conv_core/conv_core.cpp:64:18) in function &apos;Conv&apos;." tag=""/>
+	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1.1.1.1&apos; (conv_core/conv_core.cpp:61:21) in function &apos;Conv&apos;." tag=""/>
+	<Message prefix="[XFORM 203-542]" severity="WARNING" keynum="790" content="Cannot flatten a loop nest &apos;Loop-1.1.1&apos; (conv_core/conv_core.cpp:57:16) in function &apos;Conv&apos; : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch." tag=""/>
+	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1.1&apos; (conv_core/conv_core.cpp:54:16) in function &apos;Conv&apos;." tag=""/>
+	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1&apos; (conv_core/conv_core.cpp:51:22) in function &apos;Conv&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 171.453 ; gain = 113.012" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1317" content="Starting hardware synthesis ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1385" content="Synthesizing &apos;Conv&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="INFO" keynum="HLS_42_1438" content="-- Implementing module &apos;Conv&apos;" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="107" content="Pipelining loop &apos;Loop 1.1&apos;." tag=""/>
+	<Message prefix="[SCHED 204-68]" severity="WARNING" keynum="98" content="Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between bus request on port &apos;gmem&apos; (conv_core/conv_core.cpp:81) and bus request on port &apos;gmem&apos; (conv_core/conv_core.cpp:80)." tag=""/>
+	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="110" content="Pipelining result : Target II = 1, Final II = 2, Depth = 12." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 28.558 seconds; current allocated memory: 119.999 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="INFO" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="INFO" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="INFO" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="INFO" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="INFO" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.549 seconds; current allocated memory: 121.573 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;Conv&apos;" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/gmem&apos; to &apos;m_axi&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/CHin_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/Hin_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/Win_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/CHout_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/Kx_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/Ky_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/Sx_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/Sy_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/mode_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/relu_en_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/feature_in_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/feature_in_precision_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/W_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/W_precision_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/feature_out_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;Conv/feature_out_precision_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on function &apos;Conv&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="364" content="Bundling port &apos;return&apos;, &apos;CHin_V&apos;, &apos;Hin_V&apos;, &apos;Win_V&apos;, &apos;CHout_V&apos;, &apos;Kx_V&apos;, &apos;Ky_V&apos;, &apos;Sx_V&apos;, &apos;Sy_V&apos;, &apos;mode_V&apos;, &apos;relu_en_V&apos;, &apos;feature_in_V&apos;, &apos;feature_in_precision_V&apos;, &apos;W_V&apos;, &apos;W_precision_V&apos;, &apos;feature_out_V&apos; and &apos;feature_out_precision_V&apos; to AXI-Lite port AXILiteS." tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_sdiv_19s_9ns_16_23_seq_1&apos; to &apos;Conv_sdiv_19s_9nsbkb&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_8ns_14ns_22_1_1&apos; to &apos;Conv_mul_mul_8ns_cud&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_8ns_22ns_30_1_1&apos; to &apos;Conv_mul_mul_8ns_dEe&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_16ns_16ns_32_1_1&apos; to &apos;Conv_mul_mul_16nseOg&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_16ns_13ns_29_1_1&apos; to &apos;Conv_mul_mul_16nsfYi&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_14ns_16ns_30_1_1&apos; to &apos;Conv_mul_mul_14nsg8j&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mac_mul_sub_8ns_16s_8ns_16_1_1&apos; to &apos;Conv_mac_mul_sub_hbi&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_16s_8ns_16_1_1&apos; to &apos;Conv_mul_mul_16s_ibs&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_8ns_16s_16_1_1&apos; to &apos;Conv_mul_mul_8ns_jbC&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_16s_16ns_32_1_1&apos; to &apos;Conv_mul_mul_16s_kbM&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_8ns_14ns_21_1_1&apos; to &apos;Conv_mul_mul_8ns_lbW&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mac_muladd_22ns_8ns_45ns_45_1_1&apos; to &apos;Conv_mac_muladd_2mb6&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_16ns_14ns_30_1_1&apos; to &apos;Conv_mul_mul_16nsncg&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mul_mul_16s_16s_32_1_1&apos; to &apos;Conv_mul_mul_16s_ocq&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;Conv_mac_muladd_16s_16s_32s_33_1_1&apos; to &apos;Conv_mac_muladd_1pcA&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mac_mul_sub_hbi&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mac_muladd_1pcA&apos;: 4 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mac_muladd_2mb6&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_14nsg8j&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_16nseOg&apos;: 3 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_16nsfYi&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_16nsncg&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_16s_ibs&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_16s_kbM&apos;: 2 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_16s_ocq&apos;: 4 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_8ns_cud&apos;: 2 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_8ns_dEe&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_8ns_jbC&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_mul_mul_8ns_lbW&apos;: 2 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;Conv_sdiv_19s_9nsbkb&apos;: 2 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;Conv&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 1.346 seconds; current allocated memory: 124.975 MB." tag=""/>
+	<Message prefix="[RTMG 210-282]" severity="INFO" keynum="RTMG_282_1796" content="Generating pipelined core: &apos;Conv_sdiv_19s_9nsbkb_div&apos;" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:36 . Memory (MB): peak = 187.949 ; gain = 129.508" tag=""/>
+	<Message prefix="[SYSC 207-301]" severity="INFO" keynum="SYSC_301_1065" content="Generating SystemC RTL for Conv." tag=""/>
+	<Message prefix="[VHDL 208-304]" severity="INFO" keynum="VHDL_304_1066" content="Generating VHDL RTL for Conv." tag=""/>
+	<Message prefix="[VLOG 209-307]" severity="INFO" keynum="VLOG_307_1067" content="Generating Verilog RTL for Conv." tag=""/>
+	<Message prefix="[HLS 200-112]" severity="INFO" keynum="472" content="Total elapsed time: 36.413 seconds; peak allocated memory: 124.975 MB." tag=""/>
+</Messages>

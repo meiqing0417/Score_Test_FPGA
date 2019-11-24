@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vivado HLS Report for 'pool'
+================================================================
+* Date:           Tue Aug 13 16:19:21 2019
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        pool_stream
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  50.00|     61.54|        6.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |  644|  644|  639|  639| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+
+* FSM state operations: 
+
+ <State 1> : 0.00ns
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%stream_tp_V_V = alloca i128, align 8" [pool_stream/pool.cpp:20]   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%stream_tp2_V_V = alloca i128, align 8" [pool_stream/pool.cpp:23]   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 2> <FIFO>
+
+ <State 2> : 21.84ns
+ST_2 : Operation 11 [1/1] (1.00ns)   --->   "%Ky_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %Ky)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 12 [1/1] (1.00ns)   --->   "%Kx_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %Kx)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 13 [1/1] (1.00ns)   --->   "%width_out_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %width_out)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 14 [1/1] (1.00ns)   --->   "%height_out_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %height_out)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 15 [1/1] (1.00ns)   --->   "%width_in_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %width_in)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 16 [1/1] (1.00ns)   --->   "%height_in_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %height_in)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 17 [1/1] (1.00ns)   --->   "%ch_div_K_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %ch_div_K)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 18 [2/2] (20.8ns)   --->   "call fastcc void @pool_1D(i128* %in_V_V, i128* %stream_tp_V_V, i32 %ch_div_K_read, i32 %height_in_read, i32 %width_in_read, i32 %Kx_read)" [pool_stream/pool.cpp:25]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 3> : 0.00ns
+ST_3 : Operation 19 [1/2] (0.00ns)   --->   "call fastcc void @pool_1D(i128* %in_V_V, i128* %stream_tp_V_V, i32 %ch_div_K_read, i32 %height_in_read, i32 %width_in_read, i32 %Kx_read)" [pool_stream/pool.cpp:25]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 4> : 20.84ns
+ST_4 : Operation 20 [2/2] (20.8ns)   --->   "call fastcc void @pool_2D(i128* %stream_tp_V_V, i128* %stream_tp2_V_V, i32 %ch_div_K_read, i32 %height_in_read, i32 %width_out_read, i32 %Ky_read)" [pool_stream/pool.cpp:26]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 5> : 0.00ns
+ST_5 : Operation 21 [1/2] (0.00ns)   --->   "call fastcc void @pool_2D(i128* %stream_tp_V_V, i128* %stream_tp2_V_V, i32 %ch_div_K_read, i32 %height_in_read, i32 %width_out_read, i32 %Ky_read)" [pool_stream/pool.cpp:26]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 6> : 19.57ns
+ST_6 : Operation 22 [2/2] (19.5ns)   --->   "call fastcc void @hs2axis(i128* %stream_tp2_V_V, i128* %out_V_data_V, i1* %out_V_last, i32 %ch_div_K_read, i32 %height_out_read, i32 %width_out_read)" [pool_stream/pool.cpp:27]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 7> : 0.00ns
+ST_7 : Operation 23 [1/2] (0.00ns)   --->   "call fastcc void @hs2axis(i128* %stream_tp2_V_V, i128* %out_V_data_V, i1* %out_V_last, i32 %ch_div_K_read, i32 %height_out_read, i32 %width_out_read)" [pool_stream/pool.cpp:27]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 8> : 0.00ns
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:16]
+ST_8 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i128* %in_V_V), !map !66"
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i128* %out_V_data_V), !map !70"
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %out_V_last), !map !74"
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %ch_div_K), !map !78"
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %height_in), !map !84"
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %width_in), !map !88"
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %height_out), !map !92"
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %width_out), !map !96"
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %Kx), !map !100"
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %Ky), !map !104"
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([5 x i8]* @pool_str) nounwind"
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([14 x i8]* @stream_tp_OC_V_OC_V_s, i32 1, [1 x i8]* @p_str33, [1 x i8]* @p_str33, i32 8, i32 8, i128* %stream_tp_V_V, i128* %stream_tp_V_V)"
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %stream_tp_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str34, i32 0, i32 0, [1 x i8]* @p_str35, [1 x i8]* @p_str36, [1 x i8]* @p_str37, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str38, [1 x i8]* @p_str39)"
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @stream_tp2_OC_V_OC_V, i32 1, [1 x i8]* @p_str40, [1 x i8]* @p_str40, i32 2, i32 2, i128* %stream_tp2_V_V, i128* %stream_tp2_V_V)"
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %stream_tp2_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str41, i32 0, i32 0, [1 x i8]* @p_str42, [1 x i8]* @p_str43, [1 x i8]* @p_str44, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str45, [1 x i8]* @p_str46)"
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:7]
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %Ky, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:8]
+ST_8 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %width_in, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:9]
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %Kx, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:10]
+ST_8 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %height_in, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:11]
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %height_out, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:12]
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %width_out, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:13]
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %ch_div_K, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:14]
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %out_V_data_V, i1* %out_V_last, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:17]
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %in_V_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_stream/pool.cpp:18]
+ST_8 : Operation 50 [1/1] (0.00ns)   --->   "ret void" [pool_stream/pool.cpp:28]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 50ns, clock uncertainty: 6.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 21.8ns
+The critical path consists of the following:
+	s_axi read on port 'Kx' [24]  (1 ns)
+	'call' operation (pool_stream/pool.cpp:25) to 'pool_1D' [46]  (20.8 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 20.8ns
+The critical path consists of the following:
+	'call' operation (pool_stream/pool.cpp:26) to 'pool_2D' [47]  (20.8 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 19.6ns
+The critical path consists of the following:
+	'call' operation (pool_stream/pool.cpp:27) to 'hs2axis' [48]  (19.6 ns)
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

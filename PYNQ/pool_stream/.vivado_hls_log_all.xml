@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('in_d3.V', pool_stream/pool.cpp:153) on array 'buf.V', pool_stream/pool.cpp:112 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'buf_V'." projectName="pool_stream" solutionName="solution1" date="2019-08-13T16:19:20.380+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'load' operation ('in_d1.V', pool_stream/pool.cpp:141) on array 'buf.V', pool_stream/pool.cpp:112 and 'store' operation (pool_stream/pool.cpp:128) of variable 'tmp.V', pool_stream/pool.cpp:128 on array 'buf.V', pool_stream/pool.cpp:112." projectName="pool_stream" solutionName="solution1" date="2019-08-13T16:19:20.351+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] The critical path consists of the following:&#xD;&#xA;&#x9;'load' operation ('tmp_V_load') on local variable 'tmp.V' (0 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp1', pool_stream/pool.cpp:92) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp3', pool_stream/pool.cpp:91) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp5', pool_stream/pool.cpp:90) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('p_0215_4', pool_stream/pool.cpp:89) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp9', pool_stream/pool.cpp:92) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp11', pool_stream/pool.cpp:91) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp13', pool_stream/pool.cpp:90) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('p_0215_4_1', pool_stream/pool.cpp:89) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp17', pool_stream/pool.cpp:92) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp19', pool_stream/pool.cpp:91) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp21', pool_stream/pool.cpp:90) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('p_0215_4_2', pool_stream/pool.cpp:89) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp25', pool_stream/pool.cpp:92) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp27', pool_stream/pool.cpp:91) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp28', pool_stream/pool.cpp:90) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('p_0215_4_3', pool_stream/pool.cpp:89) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp29', pool_stream/pool.cpp:92) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp30', pool_stream/pool.cpp:91) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp31', pool_stream/pool.cpp:90) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('p_0215_4_4', pool_stream/pool.cpp:89) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp32', pool_stream/pool.cpp:92) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp33', pool_stream/pool.cpp:91) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp34', pool_stream/pool.cpp:90) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('p_0215_4_5', pool_stream/pool.cpp:89) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp35', pool_stream/pool.cpp:92) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp36', pool_stream/pool.cpp:91) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp37', pool_stream/pool.cpp:90) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('p_0215_4_6', pool_stream/pool.cpp:89) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp38', pool_stream/pool.cpp:95) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp39', pool_stream/pool.cpp:95) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('sel_tmp40', pool_stream/pool.cpp:95) (1.92 ns)&#xD;&#xA;&#x9;'select' operation ('tmp.V', pool_stream/pool.cpp:95) (1.92 ns)" projectName="pool_stream" solutionName="solution1" date="2019-08-13T16:19:19.407+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (61.536ns) exceeds the target (target clock period: 50ns, clock uncertainty: 6.25ns, effective delay budget: 43.75ns)." projectName="pool_stream" solutionName="solution1" date="2019-08-13T16:19:19.383+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] pool_stream/pool.cpp:158: variable-indexed range selection may cause suboptimal QoR." projectName="pool_stream" solutionName="solution1" date="2019-08-13T16:19:16.362+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="pool" xd:componentRef="pool" xd:initiationInterval="645" xd:clockPeriod="50.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="in" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_V_V" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="out.data" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="out.last" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="ch_div_K" xd:originalName="ch_div_K" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="height_in" xd:originalName="height_in" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="width_in" xd:originalName="width_in" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="height_out" xd:originalName="height_out" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="width_out" xd:originalName="width_out" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="Kx" xd:originalName="Kx" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="Ky" xd:originalName="Ky" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x40" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="644" xd:worst-case="644" xd:average-case="644"/>
+  <xd:resourceEstimates xd:LUT="18303" xd:FF="9316" xd:BRAM="32" xd:DSP="32"/>
+</xd:acceleratorMap>

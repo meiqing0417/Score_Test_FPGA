@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="conv_core.h" path="C:\Users\caiyujie\Desktop\gongkaike_hls\code\day6\conv_core\conv_core.h"/>
+    <originFiles name="conv_core.cpp" path="C:\Users\caiyujie\Desktop\gongkaike_hls\code\day6\conv_core\conv_core.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="C:\Users\caiyujie\Desktop\gongkaike_hls\code\day6\conv_core\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

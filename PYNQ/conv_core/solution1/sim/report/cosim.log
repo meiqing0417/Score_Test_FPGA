@@ -1,0 +1,18 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+WARNING: [COSIM-369] AXI_master port 'feature_in.V' has a depth of '1'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'W.V' has a depth of '1'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'feature_out.V' has a depth of '1'. Insufficient depth may result in simulation mismatch or freeze.
+   Build using "D:/Xilinx/Vivado/2018.1/msys/bin/g++.exe"
+   Compiling apatb_Conv.cpp
+   Compiling conv_core.cpp_pre.cpp.tb.cpp
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+ERROR: [COSIM-344] Rtl simulation failed.
+ERROR: [COSIM-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

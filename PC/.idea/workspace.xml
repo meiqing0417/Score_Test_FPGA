@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="544b6526-e075-4832-aca9-ed095cd498bd" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RVm5qhWxK9hn2Eejdnq68mH8LC" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Download\PyCharm\Project\train" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="imgcut_to_imgData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="train" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/imgcut_to_imgData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="imgplus" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="train" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/imgplus.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="train" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="train" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vvvv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="train" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vvvv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.imgcut_to_imgData" />
+        <item itemvalue="Python.imgplus" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.vvvv" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="544b6526-e075-4832-aca9-ed095cd498bd" name="Default Changelist" comment="" />
+      <created>1569760456248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569760456248</updated>
+      <workItem from="1569760457375" duration="3850000" />
+      <workItem from="1569818353304" duration="69000" />
+      <workItem from="1569823824983" duration="15000" />
+      <workItem from="1569829340462" duration="5096000" />
+      <workItem from="1570514760386" duration="3020000" />
+      <workItem from="1570612292644" duration="1646000" />
+      <workItem from="1570868127314" duration="38000" />
+      <workItem from="1571124117403" duration="3664000" />
+      <workItem from="1571142555987" duration="4082000" />
+      <workItem from="1571205254532" duration="4002000" />
+      <workItem from="1571209365680" duration="10205000" />
+      <workItem from="1571308440604" duration="577000" />
+      <workItem from="1571309038354" duration="1334000" />
+      <workItem from="1571319269453" duration="6838000" />
+      <workItem from="1571364700181" duration="2882000" />
+      <workItem from="1571367604472" duration="54000" />
+      <workItem from="1571367671110" duration="5395000" />
+      <workItem from="1571382938934" duration="2116000" />
+      <workItem from="1571386234416" duration="1534000" />
+      <workItem from="1571643397696" duration="825000" />
+      <workItem from="1571709901298" duration="9508000" />
+      <workItem from="1571733792719" duration="8916000" />
+      <workItem from="1571747308829" duration="47000" />
+      <workItem from="1571747369528" duration="2572000" />
+      <workItem from="1571832663166" duration="2359000" />
+      <workItem from="1571904286962" duration="7583000" />
+      <workItem from="1571925590010" duration="7687000" />
+      <workItem from="1571979016837" duration="18873000" />
+      <workItem from="1572056536088" duration="619000" />
+      <workItem from="1572066973566" duration="5889000" />
+      <workItem from="1572094277108" duration="1882000" />
+      <workItem from="1572178646133" duration="2607000" />
+      <workItem from="1572267823033" duration="1967000" />
+      <workItem from="1572334862667" duration="1424000" />
+      <workItem from="1572339090299" duration="3799000" />
+      <workItem from="1572612448024" duration="5395000" />
+      <workItem from="1572684246082" duration="949000" />
+      <workItem from="1572942714871" duration="2000" />
+      <workItem from="1572954846805" duration="1792000" />
+      <workItem from="1572956653941" duration="6568000" />
+      <workItem from="1572963471668" duration="682000" />
+      <workItem from="1573039268238" duration="9715000" />
+      <workItem from="1573111393922" duration="3197000" />
+      <workItem from="1573177584190" duration="24684000" />
+      <workItem from="1573278612714" duration="15684000" />
+      <workItem from="1573311056683" duration="76000" />
+      <workItem from="1573378835697" duration="16029000" />
+      <workItem from="1573447293164" duration="3912000" />
+      <workItem from="1573451614894" duration="4875000" />
+      <workItem from="1573463715286" duration="3024000" />
+      <workItem from="1573481420027" duration="736000" />
+      <workItem from="1573524427066" duration="19982000" />
+      <workItem from="1573610085994" duration="13709000" />
+      <workItem from="1573653296446" duration="1985000" />
+      <workItem from="1573717501582" duration="20753000" />
+      <workItem from="1573820027244" duration="1305000" />
+      <workItem from="1573982512699" duration="564000" />
+      <workItem from="1573994549657" duration="49000" />
+      <workItem from="1573994867179" duration="4538000" />
+      <workItem from="1574052853706" duration="43000" />
+      <workItem from="1574058386975" duration="1204000" />
+      <workItem from="1574082047224" duration="1647000" />
+      <workItem from="1574084962852" duration="2153000" />
+      <workItem from="1574128344096" duration="1413000" />
+      <workItem from="1574130244319" duration="7972000" />
+      <workItem from="1574163704584" duration="3078000" />
+      <workItem from="1574221976561" duration="428000" />
+      <workItem from="1574226012430" duration="4965000" />
+      <workItem from="1574252167005" duration="1879000" />
+      <workItem from="1574254081874" duration="1833000" />
+      <workItem from="1574256227238" duration="4006000" />
+      <workItem from="1574324732646" duration="7214000" />
+      <workItem from="1574385748885" duration="856000" />
+      <workItem from="1574386637555" duration="3733000" />
+      <workItem from="1574404240003" duration="655000" />
+      <workItem from="1574421242493" duration="4813000" />
+      <workItem from="1574499630264" duration="1649000" />
+      <workItem from="1574569504732" duration="2460000" />
+      <workItem from="1574573772489" duration="507000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/train$b.coverage" NAME="b Coverage Results" MODIFIED="1573735315943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$train.coverage" NAME="train Coverage Results" MODIFIED="1573455535250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$stu.coverage" NAME="stu Coverage Results" MODIFIED="1573452460125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PC$main.coverage" NAME="main Coverage Results" MODIFIED="1574573831621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$data_img.coverage" NAME="data_img Coverage Results" MODIFIED="1571310254727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$imgcut_to_imgData.coverage" NAME="imgcut_to_imgData Coverage Results" MODIFIED="1574501573378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$make_data.coverage" NAME="make_data Coverage Results" MODIFIED="1572008557290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$final_score.coverage" NAME="final_score Coverage Results" MODIFIED="1571206897728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$plot.coverage" NAME="plot Coverage Results" MODIFIED="1573741085152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$hsv.coverage" NAME="hsv Coverage Results" MODIFIED="1572002853052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$ccc.coverage" NAME="ccc Coverage Results" MODIFIED="1573280352705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$imgplus.coverage" NAME="imgplus Coverage Results" MODIFIED="1574500129872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$read_Tfrecord__2_.coverage" NAME="read_Tfrecord (2) Coverage Results" MODIFIED="1571747931442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$make_image_TFRecord.coverage" NAME="make_image_TFRecord Coverage Results" MODIFIED="1571747122176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$img_cut.coverage" NAME="img_cut Coverage Results" MODIFIED="1571150580591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$whatever.coverage" NAME="whatever Coverage Results" MODIFIED="1571238625471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$test.coverage" NAME="test Coverage Results" MODIFIED="1574426835617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$aaaaaa.coverage" NAME="aaaaaa Coverage Results" MODIFIED="1573737225821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$MNIST_generate.coverage" NAME="MNIST_generate Coverage Results" MODIFIED="1571745171567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$train_keras.coverage" NAME="train_keras Coverage Results" MODIFIED="1571127242876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$help_widget.coverage" NAME="help_widget Coverage Results" MODIFIED="1573208624503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/QT/Help" />
+    <SUITE FILE_PATH="coverage/train$main.coverage" NAME="main Coverage Results" MODIFIED="1574571669115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$read_Tfrecord.coverage" NAME="read_Tfrecord Coverage Results" MODIFIED="1571746735727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test-jpg" />
+    <SUITE FILE_PATH="coverage/train$read_Tfrecord__1_.coverage" NAME="read_Tfrecord (1) Coverage Results" MODIFIED="1571747158640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model4" />
+    <SUITE FILE_PATH="coverage/train$a.coverage" NAME="a Coverage Results" MODIFIED="1573039735615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$mei1_1.coverage" NAME="mei1_1 Coverage Results" MODIFIED="1573215260078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="Z:/jupyter_notebooks" />
+    <SUITE FILE_PATH="coverage/train$Rename.coverage" NAME="Rename Coverage Results" MODIFIED="1573454728052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/train$destination.coverage" NAME="destination Coverage Results" MODIFIED="1573299062364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/ui" />
+    <SUITE FILE_PATH="coverage/train$vvvv.coverage" NAME="vvvv Coverage Results" MODIFIED="1573999122665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

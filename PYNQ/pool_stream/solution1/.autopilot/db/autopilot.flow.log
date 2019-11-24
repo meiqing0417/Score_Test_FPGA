@@ -1,0 +1,414 @@
+INFO: [HLS 200-0] Workspace C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1 opened at Tue Aug 13 16:20:25 +0800 2019
+Execute     config_clock -quiet -name default -period 50 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+Command     config_clock returned 0; 0 sec.
+Execute     open_platform DefaultPlatform 
+Command     open_platform returned 0; 0 sec.
+Execute     import_lib C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.lib 
+Command           ap_source returned 0; 0.005 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.lib 
+Command           ap_source returned 0; 0.007 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.lib 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.lib 
+Command           ap_source returned 0; 0.004 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.lib 
+Command           ap_source returned 0; 0.006 sec.
+Command         ap_source returned 0; 0.028 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.lib 
+Command         ap_source returned 0; 0.005 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.lib 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.lib 
+Command         ap_source returned 0; 0.004 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.lib 
+Command         ap_source returned 0; 0.004 sec.
+Command       ap_source returned 0; 0.051 sec.
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_old.lib 
+Command       ap_source returned 0; 0.004 sec.
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_vivado.lib 
+Command       ap_source returned 0; 0.005 sec.
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
+Command         ap_source returned 0; 0.007 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
+Command           ap_source returned 0; 0.005 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
+Command           ap_source returned 0; 0.002 sec.
+Command         ap_source returned 0; 0.013 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
+Command         ap_source returned 0; 0.011 sec.
+Command       ap_source returned 0; 0.054 sec.
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Command       ap_source returned 0; 0.005 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Command       config_chip_info returned 0; 0 sec.
+Execute       config_chip_info -quiet -speed medium 
+Command       config_chip_info returned 0; 0 sec.
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.004 sec.
+Command     import_lib returned 0; 0.137 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.005 sec.
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.007 sec.
+Command           ap_source returned 0; 0.012 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.012 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.008 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.003 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.11 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.151 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.154 sec.
+Command     ap_source returned 0; 0.154 sec.
+Execute     set_part xc7z010clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         license_isbetapart xc7z010 
+Command         license_isbetapart returned 1; 0.02 sec.
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
+Command         config_chip_info returned 0; 0 sec.
+Execute         config_chip_info -quiet -speed slow 
+Command         config_chip_info returned 0; 0 sec.
+Command       add_library returned 0; 0.029 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         open_platform DefaultPlatform 
+Command         open_platform returned 0; 0 sec.
+Execute         import_lib C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_hp.lib 
+Command             ap_source returned 0; 0.009 sec.
+Command           ap_source returned 0; 0.019 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
+Command               ap_source returned 0; 0.002 sec.
+Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
+Command                 ap_source returned 0; 0 sec.
+Execute                 source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
+Command                 ap_source returned 0; 0 sec.
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
+Command               ap_source returned 0; 0.001 sec.
+Command             ap_source returned 0; 0.005 sec.
+Command           ap_source returned 0; 0.01 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_hp.hlp 
+Command           ap_source returned 0; 0.008 sec.
+Command         import_lib returned 0; 0.064 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command           ap_source returned 0; 0.004 sec.
+Command         ap_source returned 0; 0.004 sec.
+Command       add_library returned 0; 0.078 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Command     set_part returned 0; 0.158 sec.
+Execute     get_default_platform 
+Command     get_default_platform returned 0; 0 sec.
+Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
+Command     config_chip_info returned 0; 0 sec.
+Execute     config_chip_info -quiet -speed slow 
+Command     config_chip_info returned 0; 0 sec.
+Command   open_solution returned 0; 0.473 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.003 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.008 sec.
+Command           ap_source returned 0; 0.012 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.014 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.016 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.007 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.149 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.207 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.21 sec.
+Command     ap_source returned 0; 0.21 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0.002 sec.
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.005 sec.
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.009 sec.
+Command           ap_source returned 0; 0.014 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.016 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.01 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.006 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.142 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.197 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.201 sec.
+Command     ap_source returned 0; 0.201 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0.002 sec.
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool_1D.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool_2D.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.compgen.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool_1D.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool_2D.compgen.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.compgen.tcl 
+Command     ap_source returned 0; 0.021 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool_1D.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool_2D.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.constraint.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0.003 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.constraint.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.constraint.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.constraint.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/pool.tbgen.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source C:/Users/caiyujie/Desktop/gongkaike_hls/code/day5/pool_stream/pool_stream/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.004 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.006 sec.
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.01 sec.
+Command           ap_source returned 0; 0.016 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.02 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.013 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.007 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.149 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.215 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.219 sec.
+Command     ap_source returned 0; 0.219 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0.003 sec.
+Command     ap_source returned 0; 0.003 sec.
+Command   export_design returned 0; 19.493 sec.
+Command ap_source returned 0; 19.97 sec.
+Execute cleanup_all 
+Command cleanup_all returned 0; 0 sec.

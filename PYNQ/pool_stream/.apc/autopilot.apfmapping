@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pool.h" path="C:\Users\caiyujie\Desktop\gongkaike_hls\code\day5\pool_stream\pool_stream\pool.h"/>
+    <originFiles name="pool.cpp" path="C:\Users\caiyujie\Desktop\gongkaike_hls\code\day5\pool_stream\pool_stream\pool.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="C:\Users\caiyujie\Desktop\gongkaike_hls\code\day5\pool_stream\pool_stream\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
